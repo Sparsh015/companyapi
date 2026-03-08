@@ -1,5 +1,12 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 
 def home_page(request):
-    return HttpResponse("Welcome to the Home Page!")
+    friends = [
+        "Alice", 
+        "Bob", 
+        "Charlie"
+        ]
+    return JsonResponse(friends, safe=False)
+    # or -- return JsonResponse({'friends' : friends})
+    
 
