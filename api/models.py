@@ -16,4 +16,3 @@ class Company(models.Model):
     added_date = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
     
-
