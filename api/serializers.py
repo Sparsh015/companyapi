@@ -17,3 +17,4 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
         model = Employee
         fields = "__all__"
 
+
